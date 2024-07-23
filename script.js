@@ -19,11 +19,11 @@ const swap = () => {
         one.textContent = '°C'
         two.textContent = '°F'
         result.textContent = ''
-  }   
+  }
 }
 
 const fahrToCel = () => {
-    farenheit = converter.value * 1.8 + 32 
+    farenheit = converter.value * 1.8 + 32
     result.textContent = `${converter.value}°C to ${farenheit.toFixed(1)}°F`
     converter.value = ''
 }
@@ -38,7 +38,6 @@ const conversion = () => {
     if (converter.value !== '') {
         if (one.textContent === '°C') {
             fahrToCel()
-        
         } else {
             celToFahr()
         }
@@ -53,7 +52,6 @@ const conversion = () => {
 const reset = (params) => {
     converter.value = ''
     result.textContent = ''
-    
 }
 
 changeBtn.addEventListener('click', swap)
